@@ -135,7 +135,7 @@ My FCN model has the following configuration:
 
 **present data with highest score, i.e. run 13c and it's loss graph and it's intepretation**
 **all other run resuls are archived in "run results" folder**
-* [HTML version of notebook](./results/model_training_run#13c_IOU_4453.html)
+* [HTML version of notebook](./results/model_training_run_13c_IOU_4453.html)
 * [model_weights](./data/weights/model_weights_13c)
 * [config_model_weighs](./data/weights/config_model_weights_13c)
 
