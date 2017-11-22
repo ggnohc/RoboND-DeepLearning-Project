@@ -131,20 +131,21 @@ My FCN model has the following configuration:
   * Although Udacity provided AWS credit as alternative to train on the cloud, the extra steps of getting limit change approved might take days for the help desk to respond.  Also found that the course note of region selection is ambiguous resulting in having to reapply for limit change.  I have since filed a waffle case so that future students can avoid this pitfall (https://github.com/udacity/robotics-nanodegree-issues/issues/177), which has just been updated as resolved.
   * Also there was worry of using up all the allocated credit due to prolong training session, as even after days of using AWS service, the usage was still not reflected on my account and I have no idea how much credit was consumed.  So I have stick with local training which is much more convenient and worry-free.
 
-### Final result
+#### Final result
+* A final score of **0.4453** was achieved with setting described above, exceeding the requirement of 0.4.
+* The required files for submission are located as below:
+  * [model_training.ipynb](./code/model_training.ipynb)
+  * [HTML version of notebook](./results/model_training_run_13c_IOU_4453.html)
+  * [model_weights](./data/weights/model_weights_13c)
+  * [config_model_weighs](./data/weights/config_model_weights_13c)
 
-**present data with highest score, i.e. run 13c and it's loss graph and it's intepretation**
-**all other run resuls are archived in "run results" folder**
-* [HTML version of notebook](./results/model_training_run_13c_IOU_4453.html)
-* [model_weights](./data/weights/model_weights_13c)
-* [config_model_weighs](./data/weights/config_model_weights_13c)
 
+#### Future improvements
+###### The student is able to clearly articulate whether this model and data would work well for following another object (dog, cat, car, etc.) instead of a human and if not, what changes would be required.
+* In order for the model to follow other object, relevant data needs to be provided so that the network is able to learn the features for that particular objects.
+* Since dogs/cats have much smaller size than a human, more layers might be needed so that more features can be extracted to increase accuracy.
 
-### Future improvements
-##### The student is able to clearly articulate whether this model and data would work well for following another object (dog, cat, car, etc.) instead of a human and if not, what changes would be required.
-* **Need data from each layer to be trained**
-
-### Reference
+#### Reference
 
 * Stanford University's popular "CS231n: Convolutional Neural Networks for Visual Recognition" class  http://cs231n.stanford.edu/
 
