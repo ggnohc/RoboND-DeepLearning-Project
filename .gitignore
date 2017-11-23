@@ -103,3 +103,9 @@ ENV/
 
 RUNS/
 
+*.zip
+Submission/config_model_weights
+Submission/model_training.html
+Submission/model_training.ipynb
+Submission/model_weights
+Submission/Writeup.md
