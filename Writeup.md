@@ -20,9 +20,11 @@ My FCN model has the following configuration:
   * Stride of 2 which will result in next layer roughly half the size of input
 * 1 1x1 convolution layer
   * 1x1 convolution layer which has 128 filters with filter size and stride both of 1 is used to replace fully connected layer to reserve spatial info.
+  * It also reduces the number of depth channel, making convolution for subsequent layers less computationally expensive.
 * 2 decoder layer with 64 and 32 layers respectively, to match the encoder layers
   * Decoder layer upsample smaller input layer using bilinear_up_sample() function to compensate for pooling loss
   * Utilize *skip connection* technique to retain information from previous layer
+* Output layer activated by Softmax function
 
     <img src="./images/model.png"/>
 
